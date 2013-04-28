@@ -30,7 +30,10 @@ switch ($argv[4]) {
 			} else { 
 				$pre = ','; 
 			}
-	        	if (strlen($i['id']) >0) {
+                        if (strlen($i['name']) < 1) {
+                                $i['name'] = $i['mac'];
+                        }
+			if (strlen($i['id']) >0) {
 				print $pre.'{ "{#WIRELESSID}":"'.$i['id'].'",'.
 					'"{#WIRELESSNAME}":"'.$i['name'].'",'.
 					'"{#WIRELESSMAC}":"'.$i['mac'].'"'.
