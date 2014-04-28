@@ -23,6 +23,9 @@
                 <application>
                     <name>Wireless</name>
                 </application>
+                <application>
+                    <name>Resources</name>
+                </application>
             </applications>
             <items>
                 <item>
